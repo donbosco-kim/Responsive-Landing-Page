@@ -1,14 +1,17 @@
-
-body {
-    font-family: "Roboto", sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* Hero Container */
-.hero {
-    background-color: #1f2937;
-    padding-bottom: 60px;
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    color: #1f2937;
+    overflow-x: hidden;
 }
 
 /* Navigation Section */
@@ -38,6 +41,12 @@ body {
 .navLinks a {
     font-size: 18px;
     color: #e5e7eb;
+}
+
+/* Hero Container */
+.hero {
+    background-color: #1f2937;
+    padding-bottom: 60px;
 }
 
 /* Hero content */
