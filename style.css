@@ -18,11 +18,10 @@ body {
 
 .navBar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    max-width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .navBar img {
@@ -32,67 +31,61 @@ body {
 
 .navLinks {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 
 .navLinks a {
-    font-size: 18px;
+    font-size: 1rem;
     color: #e5e7eb;
 }
 
-/* Hero Container */
+/* Hero Section */
 .hero {
     background-color: #1f2937;
-    padding-bottom: 60px;
+    color: #F9FAF8;
+    padding: 2rem 1rem;
+    text-align: center;
 }
 
-/* Hero content */
 .heroContent {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
-    gap: 2rem;
-}
-
-.heroText {
-    max-width: 50%;
+    gap: 1.5rem;
 }
 
 .heroText h1{
-    color: #F9FAF8;
-    font-size: 48px;
+    font-size: 2rem;
     font-weight: 900;
-    margin-bottom: 15px;
+    margin-bottom: 0.5rem;
 }
 
 .heroText p {
-    font-size: 18px;
+    font-size: 1rem;
     color: #e5e7eb;
-    margin-bottom: 25px;
-}
-
-.heroImage {
-    border: solid white 2px;
+    margin-bottom: 1rem;
 }
 
 .heroImage img {
+    width: 100%;
     max-width: 500px;
-    max-height: 250px;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 8px;
 }
 
-/* Buttons color */
+/* Buttons */
 button {
     background-color: #3882F6;
     color: #e5e7eb;
-    border: 2px solid #e5e7eb;
     border-radius: 8px;
-    padding: 10px 25px;
-    font-size: 16px;
+    padding: 0.6rem 1.6rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
