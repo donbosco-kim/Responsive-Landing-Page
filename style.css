@@ -83,6 +83,7 @@ body {
 button {
     background-color: #3882F6;
     color: #e5e7eb;
+    border: 2px solid #e5e7eb;
     border-radius: 8px;
     padding: 0.6rem 1.6rem;
     font-size: 1rem;
@@ -90,90 +91,94 @@ button {
 }
 
 /* Images section */ 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.images {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.images h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .imageFlex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .imageCard {
-    max-height: 300px;
+    max-width: 90%;
 }
 
-figure {
-    display: flex;
-    flex-direction: column;
-    max-width: 160px;
-    border: solid rgb(29, 56, 209) 2px;
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #3882F6;
     border-radius: 15px;
-    padding: 8px;
+    margin-bottom: 1rem;
 }
 
 figcaption {
-    text-align: center;
+    font-size: 0.9rem;
+    color: #1f2937;
 }
 
 /* Quote section */
 .randomQuote {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: #e5e7eb;
+    padding: 3rem 1rem;
+    text-align: center;
 }
 
-blockquote {
-    max-width: 750px;
-    max-height: 360px;
+.randomQuote blockquote {
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-blockquote p {
-    font-size: 36px;
+.randomQuote p {
+    font-size: 1.25rem;
     color: #1f2937;
-    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.randomQuote cite {
+    font-size: 1rem;
 }
 
 /* Call to action */
 .callToAction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 0;
-}
-
-.callToAction > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #3882F6;
-    color:#e5e7eb;
+    color: #e5e7eb;
     border-radius: 10px;
-    padding: 30px 40px;
-    width: 60%;
-    max-width: 800px;
-    min-width: 300px;
-}
-.callToAction h4, .callToAction p {
-    margin: 0;
-}
-
-.callToActionText {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    text-align: left;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.callToAction h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.25rem;
+}
+
+.callToAction p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .callToAction button {
     color: #e5e7eb;
     border: 2px solid #e5e7eb;
     border-radius: 8px;
-    padding: 10px 25px;
-    font-size: 16px;
+    padding: 0.6rem 1.6rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -182,6 +187,5 @@ footer {
     text-align: center;
     background-color: #1f2937;
     color:#F9FAF8;
-    padding: 20px 20px;
-    height: 80px;
+    padding: 1rem 0;
 }
